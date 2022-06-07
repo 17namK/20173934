@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백석대학교 이전 수강학점 입력</title>
+</head>
+
+
+<body>
+    <div style="border: 1px solid white; padding: 3px; background-color: lightgray;">
+        <img src="bulogo.png">
+        <p>회원가입</p>
+    </div>
+
+    <style>
+        p {
+            font-size: 30pt;
+            color: white;
+            margin-right: 1250px;
+        }
+
+        img {
+            width: 400px;
+            height: 125px;
+            float: left;
+        }
+
+        div {
+            text-align: center;
+            font-size: 15pt;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        select {
+            width: 100px;
+            padding: .5em .3em;
+            font-family: inherit;
+            border: 1px solid black;
+        }
+    </style>
+
+    <h1>기본 정보 입력</h1>
+
+    <div style="border: 1px solid white; padding: 13px; background-color: lightgray;">
+
+
+        <tr>
+            <th> 이름</th>
+            <td><input type="text" name="mbname"></td>
+        </tr><br><br>
+
+
+        <tr>
+            <th>학번</th>
+            <td>
+                <input type="text" name="cursor:pointer">
+                <a href='#' style='cursor:help'> 중복확인 </a>
+            </td>
+        </tr><br><br>
+
+
+        <tr>
+            <th>비밀번호</th>
+            <td><input type="password" name="mbpw"><br> 영문/숫자포함 6자 이상</td>
+        </tr><br><br>
+
+        <tr>
+            <th>비밀번호 확인</th>
+            <td><input type="password" name="mbpw_re"></td>
+        </tr><br><br>
+
+
+
+        <tr>
+            <th>이메일</th>
+            <td>
+                <input type='text' name="email">@
+                <input type='text' name="email_dns">
+                <select name="emailaddr">
+                    <option value="">직접입력</option>
+                    <option value="daum.net">daum.net</option>
+                    <option value="empal.com">empal.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="hanmail.net">hanmail.net</option>
+                    <option value="msn.com">msn.com</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="nate.com">nate.com</option>
+                </select>
+            </td>
+        </tr><br><br>
+
+
+
+        <tr id="space" style="width: 50%; font-size: 9pt;">
+            <td align="center" ;>
+
+                ※ 기존 재학생의 경우 다음 페이지에서 수강했던 수강목록을 작성해주시오.<br>
+                신입생의 경우 해당없음 선택 후 다음으로 눌러주십시오.
+
+            </td>
+        </tr><br><br>
+
+    </div>
+
+    <div>
+        <a class="button" href="#">다음</a>
+        <a class="button1" href="#">취소</a>
+    </div>
+    <style>
+        .button {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            text-decoration: none;
+            line-height: 50px;
+            outline: none;
+        }
+
+        .button::before,
+        .button::after {
+            position: absolute;
+            z-index: -1;
+            display: black;
+            content: '';
+        }
+
+        .button,
+        .button::before,
+        .button::after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+        }
+
+        .button {
+            background-color: skyblue;
+            color: #fff;
+        }
+
+        .button:hover {
+            background-color: black;
+        }
+
+        .button1 {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            text-decoration: none;
+            line-height: 50px;
+            outline: none;
+        }
+
+        .button1::before,
+        .button1::after {
+            position: absolute;
+            z-index: -1;
+            display: black;
+            content: '';
+        }
+
+        .button1,
+        .button1::before,
+        .button1::after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+        }
+
+        .button1 {
+            background-color: black;
+            color: #fff;
+        }
+
+        .button1:hover {
+            background-color: skyblue;
+        }
+    </style>
+</body>

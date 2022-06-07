@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강의리뷰 작성</title>
+</head>
+
+<body>
+    <div style="border: 1px solid white; padding: 3px; background-color: lightgray;">
+        <img src="bulogo.png">
+        <p>회원님(20210000)</p>
+        <p>기존학점 : 0학점 / 장바구니 학점 : 0학점</p>
+        <button style="margin-left: 1522px" type="button" onclick="location.href='로그인 폼 링크'">로그아웃</button>
+    </div><br>
+
+    <div>
+        <button type="button" onclick="location.href='강의검색 링크'">강의검색</button>
+        <button type="button" onclick="location.href='수강신청 링크'">수강신청</button>
+        <button type="button" onclick="location.href='수강목록 링크'">수강목록</button>
+        <button type="button" onclick="location.href='담은수강 링크'">담은수강</button>
+        <button type="button" onclick="location.href='공지사항 링크'">공지사항</button>
+    </div><br>
+
+    <div style="border: 1px solid white; padding: 13px; text-align: center; font-size: 15pt;">
+        <input type="radio" name="chk_info" value="전공">전공
+        <input type="radio" name="chk_info"
+            value="교양">교양&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+        학부&nbsp&nbsp<select>
+            <option value="학부를 선택하세요">학부를 선택하세요</option>
+            <option value="컴퓨터공학부">컴퓨터공학부</option>
+            <option value="스마트IT학부">스마트IT학부</option>
+        </select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+        전공&nbsp&nbsp<select>
+            <option value="전공을 선택하세요">전공을 선택하세요</option>
+            <option value="소프트웨어학과">소프트웨어학과</option>
+            <option value="멀티미디어학과">멀티미디어학과</option>
+            <option value="정보통신학과">정보통신학과</option>
+            <option value="정보보호학과">정보보호학과</option>
+            <option value="인공지능학과">인공지능학과</option>
+        </select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+        과목명&nbsp&nbsp<select>
+            <option value="과목을 선택하세요">과목을 선택하세요</option>
+            <option value="JSP와 서블릿">JSP와 서블릿</option>
+            <option value="운영체제론">운영체제론</option>
+            <option value="데이터통신">데이터통신</option>
+            <option value="인공지능">인공지능</option>
+        </select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+        과목코드입력 : <input type="text" style="width: 200px; height: 30px; line-height: 30px;" id="keyword" />
+    </div><br>
+
+
+   
+
+    <table id="user-table">
+        <tbody>
+            <tr>
+                <td bgcolor="#b1b1b1">학번</td>
+                <td>홍길동</td>
+                <td bgcolor="#b1b1b1">학부</td>
+                <td>컴퓨터공학부</td>
+                <td bgcolor="#b1b1b1">신청가능학점</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td bgcolor="#b1b1b1">학번</td>
+                <td>20210000</td>
+                <td bgcolor="#b1b1b1">전공</td>
+                <td>컴퓨터공학부</td>
+                <td bgcolor="#b1b1b1">신청한학점</td>
+                <td>3</td>
+
+            </tr>
+            <tr>
+                <td bgcolor="#b1b1b1">학년</td>
+                <td>3</td>
+                <td bgcolor="#b1b1b1">학기</td>
+                <td>1</td>
+                <td bgcolor="#b1b1b1">남은학점</td>
+                <td>16</td>
+
+            </tr>
+        </tbody>
+    </table><br>
+
+    <h2 align="center"> 과목 리뷰 </h2>
+
+    <div id="write">
+        <h2 style="margin-left:130px">리뷰 작성하기</h2>
+        <form>
+            <input type="text" name="title" style="width: 400px; height: 150px;" placeholder="여기에 입력하시오.">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <tr>별점</tr>
+            <select>
+                <option value="0">☆☆☆☆☆</option>
+                <option value="1">☆☆☆☆★</option>
+                <option value="2">☆☆☆★★</option>
+                <option value="3">☆☆★★★</option>
+                <option value="4">☆★★★★</option>
+                <option value="5">★★★★★</option>
+            </select>
+        </form>
+        <button style="margin-left: 450px" type="button" onclick="location.href='#'">리뷰작성</button>
+    </div>
+
+    <style>
+        #write{
+            height: 280px;
+            width: 830px;
+            position: absolute;
+            border: 5px solid white;
+            padding: 10px;
+            background-color: lightgray;
+            margin-left: 28%;
+
+        }
+        #container {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        #container #input-form {
+            text-align: center;
+        }
+
+        #user-table {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #user-table {
+            border-collapse: collapse;
+        }
+
+        #user-table>tbody>tr>td {
+            border: 1px solid gray;
+            padding: 8px;
+        }
+
+
+        p {
+            font-size: 20pt;
+            color: white;
+            margin-left: 1250px;
+        }
+
+        img {
+            width: 400px;
+            height: 125px;
+            float: left;
+        }
+
+        select {
+            width: 200px;
+            padding: .5em .3em;
+            font-family: inherit;
+            border: 1px solid black;
+        }
+
+
+
+        button {
+            display: inline-block;
+            width: 376px;
+            height: 50px;
+            text-align: center;
+            text-decoration: none;
+            line-height: 50px;
+            outline: none;
+            border: none;
+        }
+
+        button::before,
+        button::after {
+            position: absolute;
+            z-index: -1;
+            display: black;
+            content: '';
+        }
+
+        button,
+        button::before,
+        button::after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+        }
+
+        button {
+            background-color: skyblue;
+            color: #fff;
+        }
+
+        button:hover {
+            background-color: black;
+        }
+    </style>
+</body>

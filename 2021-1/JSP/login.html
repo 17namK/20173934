@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+</head>
+<body bgcolor="lightgray">
+    <style>
+        
+        #login_wrapper{
+            border: 20px solid lightblue;
+            padding :5px 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 450px;
+            height: 250px;
+            margin-left: -220px;
+            margin-top: -170px;
+
+            display:  flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        }
+        h1{
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+        .form{
+            width: 300px;
+        }
+        .form > div{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 7px;
+            align-items: center;
+        }
+        ladel{
+            flex: 1;
+            text-align: left;
+        }
+        button{
+            width: 85px;
+            float: right;
+            padding : 3px;
+        }
+        input{
+            padding: 5px;
+        }
+    </style>
+
+</body>
+<div id ="login_wrapper">
+    <img src="bulogo.png">
+    <h1>수강신청 장바구니 아이디</h1>
+    <form action="login" method="POST" class="form">
+        <div>
+            <label>학번(ID)</label>
+            <input type="text" id="id" name="id" maxlength="20" placeholder="username">
+
+        </div>
+        <div>
+            <label>비밀번호</label>
+            <input type="password" id="pwd" name="pwd" maxlength="20" placeholder="passward">
+        </div>
+        <button type="button" onclick="location.href='홈페이지 링크'">로그인</button>
+        <button type="button" onclick="location.href='join.html'">회원가입</button> &nbsp;&nbsp;&nbsp;
+    </form>
+</div>
+
+</html>

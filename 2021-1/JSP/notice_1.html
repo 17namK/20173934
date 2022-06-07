@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+</head>
+
+<body>
+    <div style="border: 1px solid white; padding: 3px; background-color: lightgray;">
+        <img src="bulogo.png">
+        <h1 style="color:#ffffff;">공지사항</h1>
+        <p>회원님(20210000)</p>
+        <p>기존학점 : 0학점 / 장바구니 학점 : 0학점</p>
+        <button style="margin-left: 1522px" type="button" onclick="location.href='login.html'">로그아웃</button>
+    </div><br>
+
+    <div>
+        <button type="button" onclick="location.href='강의검색 링크'">강의검색</button>
+        <button type="button" onclick="location.href='수강신청 링크'">수강신청</button>
+        <button type="button" onclick="location.href='수강목록 링크'">수강목록</button>
+        <button type="button" onclick="location.href='담은수강 링크'">담은수강</button>
+        <button type="button" onclick="location.href='공지사항 링크'">공지사항</button>
+    </div><br>
+
+    <h2 align="center">공지사항</h2>
+
+    <table id="user-table">
+        <tbody>
+            <tr>
+                <td bgcolor="#b1b1b1" style="width: 1000px;">공지사항</td>
+                <td bgcolor="#b1b1b1" style="width: 100px;">작성자</td>
+                <td bgcolor="#b1b1b1" style="width: 100px;">작성날짜</td>
+                <td bgcolor="#b1b1b1" style="width: 100px;">조회수</td>
+
+            </tr>
+            <tr>
+                <td>공지1</td>
+                <td>관리자</td>
+                <td>2021.01.01</td>
+                <td>12</td>
+            </tr>
+            <td colspan="4" style="height: 200px;">
+                내용은 이렇게 출력
+            </td>
+            <tr>
+
+            </tr>
+
+    </table><br>
+    <button style="margin-left: 40%;" type="button" onclick="location.href='notice.html'">목록</button>
+
+
+
+    <style>
+        button.upload {
+
+            margin-left: 35%;
+            width: 30%;
+        }
+
+        #container #input-form {
+            text-align: center;
+        }
+
+        #user-table {
+            margin: 0 auto;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        #user-table>tbody>tr>td {
+            border: 1px solid gray;
+            padding: 8px;
+        }
+
+        p {
+            font-size: 20pt;
+            color: white;
+            margin-left: 1250px;
+        }
+
+        img {
+            width: 400px;
+            height: 125px;
+            float: left;
+        }
+
+        select {
+            width: 200px;
+            padding: .5em .3em;
+            font-family: inherit;
+            border: 1px solid black;
+        }
+
+        button {
+            display: inline-block;
+            width: 376px;
+            height: 50px;
+            text-align: center;
+            text-decoration: none;
+            line-height: 50px;
+            outline: none;
+            border: none;
+        }
+
+        button::before,
+        button::after {
+            position: absolute;
+            z-index: -1;
+            display: black;
+            content: '';
+        }
+
+        button,
+        button::before,
+        button::after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+        }
+
+        button {
+            background-color: skyblue;
+            color: #fff;
+        }
+
+        button:hover {
+            background-color: black;
+        }
+    </style>
+</body>
