@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <style>
+        .layout {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        input {
+            width: 250px;
+            height: 30px;
+            border: 1px solid silver;
+            border-radius: 5px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .content span {
+            font-size: 18px;
+        }
+
+        #login {
+            margin-top: 30px;
+            width: 100px;
+            height: 35px;
+            border: none;
+            background-color: #ff6f00;
+            font-size: 15px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .signup{
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="logo">
+            <img src="./images/logo.png" width="120" />
+        </div>
+        <div class="content">
+            <span>아이디</span>
+            <input id="id_" class="id_"/>
+        </div>
+        <div class="content">
+            <span>비밀번호</span>
+            <input type="password" id="pass_" class="pass_"/>
+        </div>
+
+        <button id="login" type="button">로그인</button>
+
+        <div class="signup">
+            
+            <p>아직 회원이 아니신가요? </p></br>
+            <a href="signup.html">회원가입</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>

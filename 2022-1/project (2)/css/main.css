@@ -1,0 +1,195 @@
+		/*상단바*/
+		.layout {
+			display: flex;
+		}
+
+		.main-header {
+
+			width: 100%;
+			background-image: url('../images/background2.jpg');
+			background-size: 100%;
+			background-repeat: no-repeat;
+		}
+
+		.header {
+			width: 100%;
+			height: 300px;
+		}
+
+		.bar {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+		}
+
+		.logo span {
+			font-size: 25px;
+			color: #fff;
+			font-weight: bold;
+		}
+
+		.list button {
+			border: none;
+			background: none;
+			color: #fff;
+			font-weight: bold;
+			font-size: 20px;
+			cursor: pointer;
+		}
+
+		.list button:hover {
+			color: #ff6f00;
+			cursor: pointer;
+		}
+		/*교내*/
+		.inside {
+			margin: 80px;
+			border-top: 1px solid #ff6f00;
+			width: 90%;
+			height: 800px;
+		}
+
+		.in_header {
+			align-items: center;
+			display: flex;
+		}
+
+		.in_header a {
+			position: absolute;
+			right: 5%;
+			color: #999999;
+		}
+
+		.in_header h2 {
+			margin-left: 5px;
+		}
+        .container{
+  width: 1024px;
+  margin: 0 auto;
+}
+.album{
+  height: 576px;
+  width: 1024px;
+  overflow: hidden;
+}
+.images{
+  position: relative;
+  display: flex;
+  height: 576pxpx;
+  width: 1024px;
+}
+.images img{
+  width: 1024px;
+  height: 576px;
+  object-fit: cover;
+
+}
+.container button, .container button:active, .container button:focus{
+  width: 500px; height: 100px;
+  border: none;
+  color: white;
+  background-color: #ff6f00;
+  outline: none;
+  margin-top: 10px;
+}
+.container button:hover{
+  background-color: #ffaf00;
+}
+.container button:disabled{
+  background-color: gray;
+}
+.prev{
+  float: left;
+  border-radius: 80px 40px;
+}
+.next{
+  float: right;
+  border-radius: 40px 80px;
+}
+
+
+
+	
+		/*교외*/
+		.outside {
+			margin: 80px;
+			border-top: 1px solid #ff6f00;
+			width: 90%;
+			height: 800px;
+		}
+
+		.out_header {
+			align-items: center;
+			display: flex;
+		}
+
+		.out_header a {
+			position: absolute;
+			right: 5%;
+			color: #999999;
+		}
+        .container1{
+  width: 1024px;
+  margin: 0 auto;
+}
+.album1{
+  height: 576px;
+  width: 1024px;
+  overflow: hidden;
+}
+.images1{
+  position: relative;
+  display: flex;
+  height: 576pxpx;
+  width: 1024px;
+}
+.images1 img{
+  width: 1024px;
+  height: 576px;
+  object-fit: cover;
+
+}
+.container1 button,.container button:active,.container button:focus{
+  width: 500px; height: 100px;
+  border: none;
+  color: white;
+  background-color: #ff6f00;
+  outline: none;
+  margin-top: 10px;
+}
+
+.container1 button:hover{
+  background-color: #ffaf00;
+}
+.container1 button:disabled{
+  background-color: gray;
+}
+.prev1{
+  float: left;
+  border-radius: 80px 40px;
+}
+.next1{
+  float: right;
+  border-radius: 40px 80px;
+}
+
+.main-footer{
+    width: 100%;
+    background-color: grey;
+    background-size: 100%;
+}
+.footer{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+}
+.footer-logo{
+    margin: auto 0 0 auto;
+    align-items: center;
+}
